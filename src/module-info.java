@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Jhennerson
+ *
+ */
+module chess {
+}
