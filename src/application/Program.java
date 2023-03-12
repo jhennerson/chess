@@ -18,7 +18,7 @@ public class Program {
 			try {
 				UI.clearScreen();
 				
-				UI.printBoard(chessMatch.getPieces());
+				UI.printMatch(chessMatch);
 				
 				System.out.println();
 				System.out.println("Source: ");
@@ -34,7 +34,7 @@ public class Program {
 				
 				ChessPosition target = UI.readChessPosition(sc);
 				
-				ChessPiece capturedPiece = chessMatch.pergormChessMove(source, target);
+				ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
 			} catch(ChessException e) {
 				System.out.println(e.getMessage());
 				
